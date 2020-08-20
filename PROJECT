@@ -1,0 +1,7 @@
+domain: google.com
+repo: github.com/salrashid123/cert-manager-gcp-privateca
+resources:
+- group: privateca
+  kind: PrivateCARequest
+  version: v1alpha1
+version: "2"

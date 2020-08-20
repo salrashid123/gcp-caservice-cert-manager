@@ -1,0 +1,16 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: certificate-sample
+  labels:
+    app.kubernetes.io/instance: gcp-cert-manager-operator
+    app.kubernetes.io/managed-by: gcp-cert-manager-operator
+    app.kubernetes.io/name: cert-manager  
+spec:
+  dnsNames:
+    - test.example.com
+  issuerRef:
+    group: privateca.google.com
+    name: privateca-issuer
+    kind: PrivateCAIssuer    
+  secretName: certificate-sample-tls-sscc12

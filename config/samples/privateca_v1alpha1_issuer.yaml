@@ -1,0 +1,9 @@
+apiVersion: privateca.google.com/v1alpha1
+kind: PrivateCAIssuer
+metadata:
+  name: privateca-issuer
+  namespace: default
+spec:
+  issuer: prod-root
+  location: us-central1
+  project: mineral-minutia-820
